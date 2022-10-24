@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+<div class="container mt-3">
+	<h3 class="border-info mt-4"><b>Status Overview</b></h3>
+	<div style="position: relative;padding-top: .35in">
+		<div class="border-end border-2 border-success d-flex align-items-start justify-content-end" style="position: absolute; top: 0; width:68%; height:0.85in; float:left">
+			<div class="me-2 text-success">Config &amp; development</div>
+		</div>
+		<div class="border-end border-2 border-danger d-flex align-items-end justify-content-end" style="position: absolute; width:70%; height:0.85in; float:left">
+			<div class="me-2 text-danger">Timeline position: Week 7</div>
+		</div>
+		<div class="progress align-items-end border border-dark mb-5 rounded-0" style="height:0.5in;">
+			<div class="progress-bar lead" style="width:40%; height:0.5in">Phase 1</div>
+			<div class="progress-bar bg-info lead text-dark" style="width:30%; height:0.33in">Phase 2</div>
+			<div class="progress-bar bg-secondary" style="width:30%; height:0.25in">Phase 3</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4">
+			<h4 class="border-bottom border-3 border-info mt-4"><b>Phase 1</b></h4>
+
+			<h5><i class="bi bi-check-lg text-success me-2"></i>Provisioning</h5>
+			<div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+			<p class="small"><i>Establish a slice of Tempo for configuraton to KACK's needs</i></p>
+
+			<h5><i class="bi bi-check-lg text-success me-2"></i>Legacy data</h5>
+			<div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+			<p class="small"><i>Populate Tempo with employee records and routes</i></p>
+
+			<h5><i class="bi bi-arrow-up-right text-primary me-2"></i>Accounting import/export</h5>
+			<div class="progress"><div class="progress-bar bg-info" style="width:90%"></div></div>
+			<p class="small"><i>Provide a means to quickly migrate data into ADP</i></p>
+		</div>
+		<div class="col-lg-4">
+			<h4 class="border-bottom border-3 border-info mt-4"><b>Phase 2</b></h4>
+
+			<h5><i class="bi bi-check-lg text-success me-2"></i>Capture time by the minute </b></h5>
+			<div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+			<p class="small"><i>Time is collected per minute and calculated into a decimal duration of hours and minutes</i></p>
+
+			<h5><i class="bi bi-check-lg text-success me-2"></i>Meridiem calculations </b></h5>
+			<div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+			<p class="small">
+				<i>For those routes/contracts that require it, driver durations are split into AM and PM hours.</i><br>
+			</p>
+
+			<h5><i class="bi bi-check-lg text-success me-2"></i>Log truck type and number </b></h5>
+			<div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+			<p class="small">
+				<i>Drivers can record the vehicle used for a particular time entry.</i><br>
+			</p>
+
+			<h5><i class="bi bi-check-lg text-success me-2"></i>Preset hours </b></h5>
+			<div class="progress"><div class="progress-bar" style="width:100%"></div></div>
+			<p class="small">
+				<i>KACK administrative staff can set default start and finish times for routes that have preset hours.</i><br>
+			</p>
+			<h5><i class="bi bi-check-lg text-primary me-2"></i>Code restrictions </b></h5>
+			<div class="progress"><div class="progress-bar bg-primary" style="width:100%"></div></div>
+			<p class="small">
+				<i>Restricted codes are available only to admins and permissed drivers</i><br>
+			</p>
+		</div>
+		<div class="col-lg-4">
+			<h4 class="border-bottom border-3 border-info mt-4"><b>Phase 3</b></h4>
+			<h5><i class="bi bi-arrow-up-right text-warning me-2"></i>Driver training program </b></h5>
+			<div class="progress"><div class="progress-bar bg-warning" style="width:33%"></div></div>
+			<p class="small">
+				<i>Modify training program to accomodate view changes in Tempo</i><br>
+			</p>
+			<hr>
+			<h4 class="border-bottom border-3 border-info mt-4"><b>Additional items</b></h4>
+			<div class="py-1"> <i class="bi bi-check-lg text-success me-2"></i> Auto-integrate ADP user data </div>
+			<div class="py-1"> <i class="bi bi-check-lg text-success me-2"></i> Auto-integrade ADP user data </div>
+			<!--
+			<div class="py-1"> <i class="bi bi-check-lg text-success me-2"></i> Remvove <b>Expenses</b> form </div>
+			<div class="py-1"> <i class="bi bi-check-lg text-success me-2"></i> Round down decimals </div>
+			<div class="py-1"> <i class="bi bi-check-lg text-success me-2"></i> <i style="text-decoration: line-through">Description</i> &rarr; <b>Comments</b> </div>
+			<div class="py-1" data-bs-toggle="collapse" data-bs-target="#i1"> <i class="bi bi-check-lg text-success me-2"></i> Overnight routes </div>
+			<div id="i1" class="collapse my-1 p-1 ps-4 small border-bottom border-1 border-success bg-light">
+				a) Tempo will discern overnight trips without requiring drivers to make separate entries.
+			</div>
+			<div class="py-1" data-bs-toggle="collapse" data-bs-target="#i2"> <i class="bi bi-check-lg text-success me-2"></i> Preset trucks &amp; numbers </div>
+			<div id="i2" class="collapse my-1 p-1 ps-4 small border-bottom border-1 border-success bg-light">
+				a) Trucks are now selected from a prepared list of trucks instead of freetype input.
+				<br>b) If the route chose for entering time has a "default vehicle" set, that vehile will autofill the truck drop menu.
+			</div>
+			<div class="py-1" data-bs-toggle="collapse" data-bs-target="#i3"> <i class="bi bi-check-lg text-success me-2"></i> Autofill preset duration </div>
+			<div id="i3" class="collapse my-1 p-1 ps-4 small border-bottom border-1 border-success bg-light">
+				a) If the route chosen for entering time has a preset start and end time, the start and finish times will autofill.
+			</div>
+			-->
+			
+			<h4 class="border-bottom border-3 border-info mt-4"><b>Remaining configuration</b></h4>
+			<kbd>Fringe benefits</kbd>
+			<kbd>Document retention</kbd>
+			<kbd>Cut-offs and notices</kbd>
+			<kbd>PTO accrual</kbd>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>
